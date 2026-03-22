@@ -2,20 +2,20 @@ name: Canary — Hourly Crawl
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Every hour
-  workflow_dispatch:       # Manual trigger anytime
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   crawl:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout public repo (snapshots + queue storage)
+      - name: Checkout public repo
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Checkout private core (scripts + logic)
+      - name: Checkout private core
         uses: actions/checkout@v4
         with:
           repository: iambel0ved-dev/canary-fanout-core
@@ -42,10 +42,10 @@ jobs:
           SNAPSHOTS_DIR: ${{ github.workspace }}/snapshots
           QUEUE_DIR: ${{ github.workspace }}/queue
 
-      - name: Commit snapshots and queue to public repo
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: 'chore: update snapshots and queue [skip ci]'
-          file_pattern: 'snapshots/*.json queue/*.json'
-          commit_user_name: 'Canary Bot'
-          commit_user_email: 'bot@canary.io'
+      - name: Commit snapshots and queue
+        run: |
+          git config user.name "Canary Bot"
+          git config user.email "bot@canary.io"
+          git add snapshots/ queue/ --ignore-errors || true
+          git diff --staged --quiet || git commit -m "chore: update snapshots and queue [skip ci]"
+          git push || true
