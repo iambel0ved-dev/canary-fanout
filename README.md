@@ -14,7 +14,7 @@ Automatically detects changes across high-signal websites and distributes intell
 
 ## Follow along
 
-- 🐦 X: [@yourhandle](https://twitter.com/yourhandle)
+- 🐦 X: [@mentor072](https://twitter.com/mentor072)
 - 🌐 Website: [canary-landing-one.vercel.app](https://canary-landing-one.vercel.app)
 
 ---
