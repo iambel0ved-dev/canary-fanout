@@ -1,0 +1,52 @@
+name: Canary — Weekly Digest
+
+on:
+  schedule:
+    - cron: '0 9 * * 5'  # Every Friday at 9am UTC
+  workflow_dispatch:       # Manual trigger anytime
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout public repo (snapshots + queue storage)
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout private core (scripts + logic)
+        uses: actions/checkout@v4
+        with:
+          repository: iambel0ved-dev/canary-fanout-core
+          token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+          path: core
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          cd core
+          npm install
+
+      - name: Run weekly digest engine
+        run: node core/scripts/weekly.js
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DIGEST_EMAIL: ${{ secrets.DIGEST_EMAIL }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          SNAPSHOTS_DIR: ${{ github.workspace }}/snapshots
+          QUEUE_DIR: ${{ github.workspace }}/queue
+
+      - name: Commit any queue updates
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: weekly digest generated [skip ci]'
+          commit_user_name: 'Canary Bot'
+          commit_user_email: 'bot@canary.io'
