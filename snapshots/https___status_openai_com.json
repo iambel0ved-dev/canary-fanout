@@ -2,7 +2,7 @@
   "hash": "-4e961bb4",
   "content": "Subscribe to updates We’re fully operational We’re not aware of any issues affecting our systems. System status Dec 2025 - Mar 2026 APIs 12 components 99.99 % uptime APIs 12 components ChatGPT 12 components 99.91 % uptime ChatGPT 12 components Codex 1 component 100 % uptime Codex 1 component Sora 5 components 99.95 % uptime Sora 5 components FedRAMP 1 component 100 % uptime FedRAMP 1 component App 100 % uptime App CLI 100 % uptime CLI View history Powered by Availability metrics are reported at an aggregate level across all tiers, models and error types. Individual customer availability may vary depending on their subscription tier as well as the specific model and API features in use. OpenAI Status",
   "statusCode": 200,
-  "checkedAt": "2026-03-26T08:43:35.325Z",
+  "checkedAt": "2026-03-26T09:53:04.440Z",
   "site": "OpenAI Status",
   "category": "Status"
 }
