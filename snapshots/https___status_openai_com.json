@@ -1,8 +1,8 @@
 {
-  "hash": "72185892",
-  "content": "Subscribe to updates We’re currently experiencing issues APIs Responses API and Sora Increased Error Rates We are continuing to investigate this issue. At this point, the issue is impacting a portion of Sora traffic, as well as Responses API using store: true param. Investigating · Ongoing for 56 minutes · Affects APIs System status Dec 2025 - Mar 2026 APIs 12 components 99.99 % uptime APIs 12 components ChatGPT 12 components 99.91 % uptime ChatGPT 12 components Codex 5 components 100 % uptime Codex 5 components Sora 5 components 99.95 % uptime Sora 5 components FedRAMP 1 component 100 % uptime FedRAMP 1 component View history Powered by Availability metrics are reported at an aggregate level across all tiers, models and error types. Individual customer availability may vary depending on their subscription tier as well as the specific model and API features in use. OpenAI Status",
+  "hash": "2ee0eed3",
+  "content": "Subscribe to updates We’re fully operational We’re not aware of any issues affecting our systems. System status Dec 2025 - Mar 2026 APIs 12 components 99.98 % uptime APIs 12 components ChatGPT 12 components 99.91 % uptime ChatGPT 12 components Codex 5 components 100 % uptime Codex 5 components Sora 5 components 99.95 % uptime Sora 5 components FedRAMP 1 component 100 % uptime FedRAMP 1 component View history Powered by Availability metrics are reported at an aggregate level across all tiers, models and error types. Individual customer availability may vary depending on their subscription tier as well as the specific model and API features in use. OpenAI Status",
   "statusCode": 200,
-  "checkedAt": "2026-03-26T22:18:28.950Z",
+  "checkedAt": "2026-03-26T23:22:14.670Z",
   "site": "OpenAI Status",
   "category": "Status"
 }
