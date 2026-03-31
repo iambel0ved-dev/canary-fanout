@@ -70,5 +70,13 @@
     "score": 9,
     "headline": "GitHub removed the OTP option for email notifications",
     "detectedAt": "2026-03-31T17:33:22.884Z"
+  },
+  {
+    "site": "GitHub Status",
+    "url": "https://www.githubstatus.com",
+    "category": "Status",
+    "score": 9,
+    "headline": "GitHub removed the OTP entry field in the subscribe section",
+    "detectedAt": "2026-03-31T18:56:18.966Z"
   }
 ]
