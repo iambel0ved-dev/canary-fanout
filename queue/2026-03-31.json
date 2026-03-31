@@ -54,5 +54,21 @@
     "score": 10,
     "headline": "Ahrefs lowered the cost of the Lite plan",
     "detectedAt": "2026-03-31T16:40:19.014Z"
+  },
+  {
+    "site": "Together AI",
+    "url": "https://together.ai/pricing",
+    "category": "AI",
+    "score": 9,
+    "headline": "Together AI updated the Batch Inference API pricing",
+    "detectedAt": "2026-03-31T17:32:52.272Z"
+  },
+  {
+    "site": "GitHub Status",
+    "url": "https://www.githubstatus.com",
+    "category": "Status",
+    "score": 9,
+    "headline": "GitHub removed the OTP option for email notifications",
+    "detectedAt": "2026-03-31T17:33:22.884Z"
   }
 ]
