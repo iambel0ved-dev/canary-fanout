@@ -46,5 +46,13 @@
     "score": 9,
     "headline": "GitHub reCAPTCHA now requires email address for subscription notifications",
     "detectedAt": "2026-03-31T16:35:46.654Z"
+  },
+  {
+    "site": "Ahrefs",
+    "url": "https://ahrefs.com/pricing",
+    "category": "SaaS",
+    "score": 10,
+    "headline": "Ahrefs lowered the cost of the Lite plan",
+    "detectedAt": "2026-03-31T16:40:19.014Z"
   }
 ]
