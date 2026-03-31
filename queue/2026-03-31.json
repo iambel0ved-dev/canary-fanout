@@ -14,5 +14,21 @@
     "score": 10,
     "headline": "OpenAI Status ChatGPT now has elevated failures for some users",
     "detectedAt": "2026-03-31T14:57:53.062Z"
+  },
+  {
+    "site": "GitHub Status",
+    "url": "https://www.githubstatus.com",
+    "category": "Status",
+    "score": 9,
+    "headline": "GitHub removed the reCAPTCHA email verification option",
+    "detectedAt": "2026-03-31T16:06:16.986Z"
+  },
+  {
+    "site": "OpenAI Status",
+    "url": "https://status.openai.com",
+    "category": "Status",
+    "score": 10,
+    "headline": "OpenAI Status issues are now resolved and systems are fully operational",
+    "detectedAt": "2026-03-31T16:06:19.910Z"
   }
 ]
