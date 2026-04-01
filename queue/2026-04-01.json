@@ -22,5 +22,13 @@
     "score": 8,
     "headline": "GitHub removed the OTP field from the Subscribe section",
     "detectedAt": "2026-04-01T11:49:30.529Z"
+  },
+  {
+    "site": "GitHub Status",
+    "url": "https://www.githubstatus.com",
+    "category": "Status",
+    "score": 10,
+    "headline": "GitHub Status added a reCAPTCHA to the subscription form",
+    "detectedAt": "2026-04-01T13:11:06.667Z"
   }
 ]
