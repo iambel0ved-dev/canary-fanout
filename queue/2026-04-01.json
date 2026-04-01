@@ -30,5 +30,13 @@
     "score": 10,
     "headline": "GitHub Status added a reCAPTCHA to the subscription form",
     "detectedAt": "2026-04-01T13:11:06.667Z"
+  },
+  {
+    "site": "GitHub Status",
+    "url": "https://www.githubstatus.com",
+    "category": "Status",
+    "score": 8,
+    "headline": "GitHub removed the OTP resend timer display",
+    "detectedAt": "2026-04-01T16:49:23.403Z"
   }
 ]
