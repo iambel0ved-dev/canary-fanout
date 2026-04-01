@@ -70,5 +70,21 @@
     "score": 8,
     "headline": "Vercel Status now offers text message notifications",
     "detectedAt": "2026-04-01T21:38:05.861Z"
+  },
+  {
+    "site": "GitHub Status",
+    "url": "https://www.githubstatus.com",
+    "category": "Status",
+    "score": 8,
+    "headline": "GitHub added reCAPTCHA to the subscription form",
+    "detectedAt": "2026-04-01T22:33:24.909Z"
+  },
+  {
+    "site": "Vercel Status",
+    "url": "https://status.vercel.com",
+    "category": "Status",
+    "score": 9,
+    "headline": "Vercel Status added text message notifications option",
+    "detectedAt": "2026-04-01T22:33:29.492Z"
   }
 ]
