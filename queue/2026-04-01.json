@@ -54,5 +54,21 @@
     "score": 8,
     "headline": "GitHub removed the reCAPTCHA opt-out option from the subscription process",
     "detectedAt": "2026-04-01T19:56:23.563Z"
+  },
+  {
+    "site": "Ahrefs",
+    "url": "https://ahrefs.com/pricing",
+    "category": "SaaS",
+    "score": 10,
+    "headline": "Ahrefs added new features to the Site Audit tool",
+    "detectedAt": "2026-04-01T21:37:49.181Z"
+  },
+  {
+    "site": "Vercel Status",
+    "url": "https://status.vercel.com",
+    "category": "Status",
+    "score": 8,
+    "headline": "Vercel Status now offers text message notifications",
+    "detectedAt": "2026-04-01T21:38:05.861Z"
   }
 ]
