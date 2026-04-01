@@ -6,5 +6,13 @@
     "score": 10,
     "headline": "OpenAI Status updated calendar period for system status reporting",
     "detectedAt": "2026-04-01T02:07:08.193Z"
+  },
+  {
+    "site": "GitHub Status",
+    "url": "https://www.githubstatus.com",
+    "category": "Status",
+    "score": 8,
+    "headline": "GitHub removed the OTP requirement for email notifications subscription",
+    "detectedAt": "2026-04-01T10:09:58.301Z"
   }
 ]
