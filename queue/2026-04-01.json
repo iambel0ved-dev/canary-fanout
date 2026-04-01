@@ -38,5 +38,13 @@
     "score": 8,
     "headline": "GitHub removed the OTP resend timer display",
     "detectedAt": "2026-04-01T16:49:23.403Z"
+  },
+  {
+    "site": "GitHub Status",
+    "url": "https://www.githubstatus.com",
+    "category": "Status",
+    "score": 8,
+    "headline": "GitHub removed the OTP resend counter from the subscription page",
+    "detectedAt": "2026-04-01T17:49:53.089Z"
   }
 ]
