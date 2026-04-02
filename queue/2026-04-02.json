@@ -86,5 +86,21 @@
     "score": 8,
     "headline": "Vercel Status text message notifications are now available for subscription",
     "detectedAt": "2026-04-02T16:56:53.103Z"
+  },
+  {
+    "site": "Google Cloud",
+    "url": "https://cloud.google.com/pricing",
+    "category": "Cloud",
+    "score": 10,
+    "headline": "Google Cloud did not change based on the given excerpts.",
+    "detectedAt": "2026-04-02T17:49:05.549Z"
+  },
+  {
+    "site": "OpenAI Status",
+    "url": "https://status.openai.com",
+    "category": "Status",
+    "score": 10,
+    "headline": "OpenAI Status mitigation applied for elevated ChatGPT error rate",
+    "detectedAt": "2026-04-02T17:49:10.953Z"
   }
 ]

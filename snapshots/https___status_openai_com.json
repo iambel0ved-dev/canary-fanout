@@ -1,8 +1,8 @@
 {
-  "hash": "-1b949186",
-  "content": "Subscribe to updates We’re currently experiencing issues ChatGPT ChatGPT Dictation Elevated Error Rate We are investigating the issue for the listed services and working on mitigating impact. Investigating · Ongoing for 2 hours · Affects ChatGPT System status Jan 2026 - Apr 2026 APIs 12 components 99.98 % uptime APIs 12 components ChatGPT 12 components 99.88 % uptime ChatGPT 12 components Codex 5 components 100 % uptime Codex 5 components Sora 5 components 99.95 % uptime Sora 5 components FedRAMP 1 component 100 % uptime FedRAMP 1 component View history Powered by Availability metrics are reported at an aggregate level across all tiers, models and error types. Individual customer availability may vary depending on their subscription tier as well as the specific model and API features in use. OpenAI Status",
+  "hash": "-215583d7",
+  "content": "Subscribe to updates We’re currently experiencing issues ChatGPT ChatGPT Dictation Elevated Error Rate We have applied the mitigation and are monitoring the recovery. Monitoring · Ongoing for 3 hours · Affects ChatGPT System status Jan 2026 - Apr 2026 APIs 12 components 99.98 % uptime APIs 12 components ChatGPT 12 components 99.87 % uptime ChatGPT 12 components Codex 5 components 100 % uptime Codex 5 components Sora 5 components 99.95 % uptime Sora 5 components FedRAMP 1 component 100 % uptime FedRAMP 1 component View history Powered by Availability metrics are reported at an aggregate level across all tiers, models and error types. Individual customer availability may vary depending on their subscription tier as well as the specific model and API features in use. OpenAI Status",
   "statusCode": 200,
-  "checkedAt": "2026-04-02T16:56:50.151Z",
+  "checkedAt": "2026-04-02T17:49:10.714Z",
   "site": "OpenAI Status",
   "category": "Status"
 }
