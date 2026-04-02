@@ -62,5 +62,29 @@
     "score": 10,
     "headline": "OpenAI Status uptime metric for ChatGPT component was updated",
     "detectedAt": "2026-04-02T15:57:33.399Z"
+  },
+  {
+    "site": "GitHub Status",
+    "url": "https://www.githubstatus.com",
+    "category": "Status",
+    "score": 10,
+    "headline": "GitHub added email address OTP resend functionality",
+    "detectedAt": "2026-04-02T16:56:46.992Z"
+  },
+  {
+    "site": "OpenAI Status",
+    "url": "https://status.openai.com",
+    "category": "Status",
+    "score": 10,
+    "headline": "OpenAI Status uptime for ChatGPT Dictation decreased by 0.01 percentage points",
+    "detectedAt": "2026-04-02T16:56:50.349Z"
+  },
+  {
+    "site": "Vercel Status",
+    "url": "https://status.vercel.com",
+    "category": "Status",
+    "score": 8,
+    "headline": "Vercel Status text message notifications are now available for subscription",
+    "detectedAt": "2026-04-02T16:56:53.103Z"
   }
 ]
