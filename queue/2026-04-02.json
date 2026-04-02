@@ -30,5 +30,13 @@
     "score": 10,
     "headline": "OpenAI Status OpenAI removed the Codex component from the uptime statistics",
     "detectedAt": "2026-04-02T08:04:15.974Z"
+  },
+  {
+    "site": "OpenAI Status",
+    "url": "https://status.openai.com",
+    "category": "Status",
+    "score": 10,
+    "headline": "OpenAI Status uptime for Codex component increased to 100 percent",
+    "detectedAt": "2026-04-02T09:57:40.666Z"
   }
 ]
