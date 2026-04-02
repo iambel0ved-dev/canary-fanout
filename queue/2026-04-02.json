@@ -150,5 +150,13 @@
     "score": 10,
     "headline": "GitHub added an OTP resend timer to the subscribe form",
     "detectedAt": "2026-04-02T22:27:45.122Z"
+  },
+  {
+    "site": "Vercel Status",
+    "url": "https://status.vercel.com",
+    "category": "Status",
+    "score": 9,
+    "headline": "Vercel Status added text message notifications option",
+    "detectedAt": "2026-04-02T23:30:54.930Z"
   }
 ]
