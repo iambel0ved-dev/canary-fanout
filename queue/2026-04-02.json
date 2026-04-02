@@ -102,5 +102,37 @@
     "score": 10,
     "headline": "OpenAI Status mitigation applied for elevated ChatGPT error rate",
     "detectedAt": "2026-04-02T17:49:10.953Z"
+  },
+  {
+    "site": "Google Cloud",
+    "url": "https://cloud.google.com/pricing",
+    "category": "Cloud",
+    "score": 10,
+    "headline": "Google Cloud removed \"Request a quote\" option from Pricing page",
+    "detectedAt": "2026-04-02T19:47:11.082Z"
+  },
+  {
+    "site": "GitHub Status",
+    "url": "https://www.githubstatus.com",
+    "category": "Status",
+    "score": 8,
+    "headline": "GitHub removed the OTP entry field for email subscriptions",
+    "detectedAt": "2026-04-02T19:47:14.916Z"
+  },
+  {
+    "site": "OpenAI Status",
+    "url": "https://status.openai.com",
+    "category": "Status",
+    "score": 10,
+    "headline": "OpenAI Status Added Sora component to system status overview",
+    "detectedAt": "2026-04-02T19:47:18.129Z"
+  },
+  {
+    "site": "Vercel Status",
+    "url": "https://status.vercel.com",
+    "category": "Status",
+    "score": 8,
+    "headline": "Vercel Status added text message notifications option",
+    "detectedAt": "2026-04-02T19:47:20.620Z"
   }
 ]
