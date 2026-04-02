@@ -38,5 +38,21 @@
     "score": 10,
     "headline": "OpenAI Status uptime for Codex component increased to 100 percent",
     "detectedAt": "2026-04-02T09:57:40.666Z"
+  },
+  {
+    "site": "OpenAI Status",
+    "url": "https://status.openai.com",
+    "category": "Status",
+    "score": 10,
+    "headline": "OpenAI Status updated system status with issue notification for ChatGPT",
+    "detectedAt": "2026-04-02T14:51:57.042Z"
+  },
+  {
+    "site": "Vercel Status",
+    "url": "https://status.vercel.com",
+    "category": "Status",
+    "score": 8,
+    "headline": "Vercel Status introduced text message notifications option",
+    "detectedAt": "2026-04-02T14:52:00.335Z"
   }
 ]
