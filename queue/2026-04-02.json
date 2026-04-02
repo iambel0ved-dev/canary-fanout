@@ -54,5 +54,13 @@
     "score": 8,
     "headline": "Vercel Status introduced text message notifications option",
     "detectedAt": "2026-04-02T14:52:00.335Z"
+  },
+  {
+    "site": "OpenAI Status",
+    "url": "https://status.openai.com",
+    "category": "Status",
+    "score": 10,
+    "headline": "OpenAI Status uptime metric for ChatGPT component was updated",
+    "detectedAt": "2026-04-02T15:57:33.399Z"
   }
 ]
