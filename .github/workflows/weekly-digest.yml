@@ -2,25 +2,30 @@ name: Canary — Weekly Digest
 
 on:
   schedule:
-    - cron: '0 9 * * 5'  # Every Friday at 9am UTC
-  workflow_dispatch:       # Manual trigger anytime
+    - cron: '0 9 * * 5'
+  workflow_dispatch:
 
 jobs:
   weekly:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout public repo (snapshots + queue storage)
+      - name: Checkout public repo
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Checkout private core (scripts + logic)
+      - name: Checkout private core
         uses: actions/checkout@v4
         with:
           repository: iambel0ved-dev/canary-fanout-core
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           path: core
+
+      - name: Install canvas system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -36,17 +41,20 @@ jobs:
         run: node core/scripts/weekly.js
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DIGEST_EMAIL: ${{ secrets.DIGEST_EMAIL }}
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
           SNAPSHOTS_DIR: ${{ github.workspace }}/snapshots
           QUEUE_DIR: ${{ github.workspace }}/queue
 
-      - name: Commit any queue updates
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: 'chore: weekly digest generated [skip ci]'
-          commit_user_name: 'Canary Bot'
-          commit_user_email: 'bot@canary.io'
+      - name: Commit queue updates
+        run: |
+          git config user.name "Canary Bot"
+          git config user.email "bot@canary.io"
+          git diff --staged --quiet || git commit -m "chore: weekly digest generated [skip ci]"
+          git push || true
