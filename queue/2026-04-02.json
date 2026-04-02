@@ -1,0 +1,18 @@
+[
+  {
+    "site": "Render",
+    "url": "https://render.com/pricing",
+    "category": "Dev Tools",
+    "score": 10,
+    "headline": "Render increased the up to $10k credits for migrating from Heroku",
+    "detectedAt": "2026-04-02T01:54:38.005Z"
+  },
+  {
+    "site": "GitHub Status",
+    "url": "https://www.githubstatus.com",
+    "category": "Status",
+    "score": 10,
+    "headline": "GitHub added a resend OTP option in the subscribe form",
+    "detectedAt": "2026-04-02T01:55:00.333Z"
+  }
+]
