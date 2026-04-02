@@ -134,5 +134,13 @@
     "score": 8,
     "headline": "Vercel Status added text message notifications option",
     "detectedAt": "2026-04-02T19:47:20.620Z"
+  },
+  {
+    "site": "GitHub Status",
+    "url": "https://www.githubstatus.com",
+    "category": "Status",
+    "score": 8,
+    "headline": "GitHub added a Resend OTP button for email verification",
+    "detectedAt": "2026-04-02T21:33:05.506Z"
   }
 ]
