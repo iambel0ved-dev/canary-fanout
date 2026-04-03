@@ -49,5 +49,6 @@ jobs:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           SNAPSHOTS_DIR: ${{ github.workspace }}/snapshots
           QUEUE_DIR: ${{ github.workspace }}/queue
