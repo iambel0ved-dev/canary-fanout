@@ -6,5 +6,13 @@
     "score": 10,
     "headline": "Ahrefs added a new free trial period for all plans",
     "detectedAt": "2026-04-03T21:29:04.239Z"
+  },
+  {
+    "site": "Ahrefs",
+    "url": "https://ahrefs.com/pricing",
+    "category": "SaaS",
+    "score": 10,
+    "headline": "Ahrefs changed the Site Audit feature to improve website performance",
+    "detectedAt": "2026-04-03T22:28:50.262Z"
   }
 ]
