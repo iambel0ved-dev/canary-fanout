@@ -22,10 +22,12 @@ jobs:
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           path: core
 
-      - name: Install canvas system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
+      - name: Checkout intelligence repo (for publishing briefings)
+        uses: actions/checkout@v4
+        with:
+          repository: iambel0ved-dev/canary-intelligence
+          token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+          path: intelligence
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -36,6 +38,11 @@ jobs:
         run: |
           cd core
           npm install
+
+      - name: Install Puppeteer system deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
 
       - name: Run daily digest engine
         run: node core/scripts/daily.js
@@ -52,3 +59,21 @@ jobs:
           IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           SNAPSHOTS_DIR: ${{ github.workspace }}/snapshots
           QUEUE_DIR: ${{ github.workspace }}/queue
+          INTELLIGENCE_DIR: ${{ github.workspace }}/intelligence
+
+      - name: Publish briefing to GitHub Pages
+        run: |
+          cd intelligence
+          git config user.name "Canary Bot"
+          git config user.email "bot@canary.io"
+          git add .
+          git diff --staged --quiet || git commit -m "briefing: daily $(date +%Y-%m-%d)"
+          git push || true
+
+      - name: Commit queue updates
+        run: |
+          git config user.name "Canary Bot"
+          git config user.email "bot@canary.io"
+          git add queue/ --ignore-errors || true
+          git diff --staged --quiet || git commit -m "chore: update queue [skip ci]"
+          git push || true
