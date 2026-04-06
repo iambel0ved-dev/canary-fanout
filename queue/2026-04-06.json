@@ -6,5 +6,21 @@
     "score": 10,
     "headline": "OpenAI Status ChatGPT service currently experiencing issues with empty responses",
     "detectedAt": "2026-04-06T07:23:57.543Z"
+  },
+  {
+    "site": "Google Cloud",
+    "url": "https://cloud.google.com/pricing",
+    "category": "Cloud",
+    "score": 10,
+    "headline": "Google Cloud Next conference registration promotion was replaced by a complimentary digital pass offer",
+    "detectedAt": "2026-04-06T09:04:23.054Z"
+  },
+  {
+    "site": "OpenAI Status",
+    "url": "https://status.openai.com",
+    "category": "Status",
+    "score": 10,
+    "headline": "OpenAI Status Codex uptime increased to 100 percent",
+    "detectedAt": "2026-04-06T09:04:27.977Z"
   }
 ]
